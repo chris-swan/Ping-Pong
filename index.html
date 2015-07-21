@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="styles.css" rel="stylesheet" type="text/css"/>
+  <title>Ping-pong Test</title>
+</head>
+<body>
+  <div class="PingPongTest">
+    <h1> Ping-Pong! </h1>
+    <ul> 
+        <script>
+        var userinput = parseInt(prompt("enter a number"));
+
+        for (var index = 1; index <= userinput; index += 1) {
+          if (index % 3 === 0 && index % 5 === 0) {
+            document.write('<li>ping pong</li>');  
+          } else if (index % 3 === 0) {
+            document.write('<li>ping</li>');
+          } else if (index % 5 === 0) {
+            document.write('<li>pong</li>');
+          } else { 
+            document.write('<li>' + index + '</li>');            
+          }
+        }
+
+        </script>
+    </ul>
+  </div>
+</body>
+</html>
